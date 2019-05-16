@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		33A5D946228DF771007467EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A5D945228DF771007467EF /* AppDelegate.swift */; };
-		33A5D948228DF771007467EF /* FriendsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A5D947228DF771007467EF /* FriendsController.swift */; };
+		33A5D948228DF771007467EF /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A5D947228DF771007467EF /* FriendsTableViewController.swift */; };
 		33A5D94B228DF771007467EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33A5D949228DF771007467EF /* Main.storyboard */; };
 		33A5D94D228DF773007467EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33A5D94C228DF773007467EF /* Assets.xcassets */; };
 		33A5D950228DF773007467EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33A5D94E228DF773007467EF /* LaunchScreen.storyboard */; };
+		33A5D958228DF7E8007467EF /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A5D957228DF7E8007467EF /* Friend.swift */; };
+		33A5D95E228DF94F007467EF /* UIAlertController+NetError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A5D95C228DF94F007467EF /* UIAlertController+NetError.swift */; };
+		33A5D960228DF96B007467EF /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A5D95F228DF96B007467EF /* NetworkHandler.swift */; };
+		33A5D962228DFD1C007467EF /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A5D961228DFD1C007467EF /* FriendTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		33A5D942228DF771007467EF /* Friends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Friends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33A5D945228DF771007467EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		33A5D947228DF771007467EF /* FriendsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsController.swift; sourceTree = "<group>"; };
+		33A5D947228DF771007467EF /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
 		33A5D94A228DF771007467EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		33A5D94C228DF773007467EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33A5D94F228DF773007467EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33A5D951228DF773007467EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33A5D957228DF7E8007467EF /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		33A5D95C228DF94F007467EF /* UIAlertController+NetError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+NetError.swift"; sourceTree = "<group>"; };
+		33A5D95F228DF96B007467EF /* NetworkHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
+		33A5D961228DFD1C007467EF /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +63,11 @@
 			isa = PBXGroup;
 			children = (
 				33A5D945228DF771007467EF /* AppDelegate.swift */,
-				33A5D947228DF771007467EF /* FriendsController.swift */,
+				33A5D95C228DF94F007467EF /* UIAlertController+NetError.swift */,
+				33A5D95F228DF96B007467EF /* NetworkHandler.swift */,
+				33A5D957228DF7E8007467EF /* Friend.swift */,
+				33A5D947228DF771007467EF /* FriendsTableViewController.swift */,
+				33A5D961228DFD1C007467EF /* FriendTableViewCell.swift */,
 				33A5D949228DF771007467EF /* Main.storyboard */,
 				33A5D94C228DF773007467EF /* Assets.xcassets */,
 				33A5D94E228DF773007467EF /* LaunchScreen.storyboard */,
@@ -135,7 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33A5D948228DF771007467EF /* FriendsController.swift in Sources */,
+				33A5D958228DF7E8007467EF /* Friend.swift in Sources */,
+				33A5D948228DF771007467EF /* FriendsTableViewController.swift in Sources */,
+				33A5D95E228DF94F007467EF /* UIAlertController+NetError.swift in Sources */,
+				33A5D962228DFD1C007467EF /* FriendTableViewCell.swift in Sources */,
+				33A5D960228DF96B007467EF /* NetworkHandler.swift in Sources */,
 				33A5D946228DF771007467EF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
