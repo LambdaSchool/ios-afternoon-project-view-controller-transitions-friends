@@ -65,14 +65,11 @@
 			isa = PBXGroup;
 			children = (
 				734001FC228DEDAA0012723F /* AppDelegate.swift */,
-				73400217228DF3E20012723F /* NavigationControllerDelegate.swift */,
-				73400219228DF48C0012723F /* ImageTransitionAnimator.swift */,
-				73400213228DF0AE0012723F /* Friend.swift */,
-				73400215228DF0D50012723F /* FriendController.swift */,
+				7340021C228E16C30012723F /* Animators */,
+				7340021B228E16830012723F /* Model and Controller */,
 				73400212228DEEC40012723F /* View Controllers */,
-				73400200228DEDAA0012723F /* Main.storyboard */,
+				7340021D228E16E40012723F /* Storyboards */,
 				73400203228DEDB10012723F /* Assets.xcassets */,
-				73400205228DEDB10012723F /* LaunchScreen.storyboard */,
 				73400208228DEDB10012723F /* Info.plist */,
 			);
 			path = Friends;
@@ -85,6 +82,33 @@
 				73400210228DEEBC0012723F /* FriendDetailViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		7340021B228E16830012723F /* Model and Controller */ = {
+			isa = PBXGroup;
+			children = (
+				73400213228DF0AE0012723F /* Friend.swift */,
+				73400215228DF0D50012723F /* FriendController.swift */,
+			);
+			path = "Model and Controller";
+			sourceTree = "<group>";
+		};
+		7340021C228E16C30012723F /* Animators */ = {
+			isa = PBXGroup;
+			children = (
+				73400217228DF3E20012723F /* NavigationControllerDelegate.swift */,
+				73400219228DF48C0012723F /* ImageTransitionAnimator.swift */,
+			);
+			path = Animators;
+			sourceTree = "<group>";
+		};
+		7340021D228E16E40012723F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				73400200228DEDAA0012723F /* Main.storyboard */,
+				73400205228DEDB10012723F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
