@@ -54,9 +54,11 @@ class ImageTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         UIView.animate(withDuration: duration, animations: {
             animatedNameLabel.frame = containerView.convert(self.destinationNameLabel.bounds, from: self.destinationNameLabel)
             
-            // animatedNameLabel.font.
+//            animatedNameLabel.font.
             
             animatedImageView.frame = containerView.convert(self.destinationImageView.bounds, from: self.destinationImageView)
+//            animatedImageView.layoutIfNeeded()
+//            animatedImageView.layer.cornerRadius = 100
             toView.alpha = 1.0
         }) { (_) in
             self.sourceNameLabel.alpha = 1.0

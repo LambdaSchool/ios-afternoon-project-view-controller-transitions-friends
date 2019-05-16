@@ -30,6 +30,8 @@ class FriendsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FriendCell", for: indexPath) as! FriendTableViewCell
 
         cell.friend = friendController.friends[indexPath.row]
+//        cell.friendImage.layer.cornerRadius = 25
+//        cell.friendImage.clipsToBounds = true
 
         return cell
     }
