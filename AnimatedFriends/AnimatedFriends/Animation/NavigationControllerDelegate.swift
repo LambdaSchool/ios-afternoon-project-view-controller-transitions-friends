@@ -12,10 +12,20 @@ class NavigationControllerDelegate: NSObject, UINavigationControllerDelegate {
     
     // MARK: - Properties
     var sourceCell: FriendTableViewCell!
+    let animator = ImageTransitionAnimator()
     
     // MARK: - Delegate Methods
     func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        <#code#>
+        
+        guard let toVC = toVC as? FriendDetailViewController else { return nil }
+        toVC.loadViewIfNeeded()
+        
+        animator.sourceImageView = sourceCell.friendImage
+        animator.sourceNameLabel = sourceCell.friendLabel
+        animator.destinationImageView = toVC.friendImage
+        animator.destinationNameLabel = toVC.friendName
+        
+        return animator
     }
 
 }
