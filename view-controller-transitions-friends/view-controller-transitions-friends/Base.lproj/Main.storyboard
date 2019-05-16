@@ -54,7 +54,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="imageView" destination="Wh2-Wg-9yy" id="Qce-mT-xBX"/>
+                                    <outlet property="friendImageView" destination="Wh2-Wg-9yy" id="Pnk-T6-w31"/>
                                     <outlet property="nameLabel" destination="Dhu-sn-wuQ" id="hAx-61-l2X"/>
                                     <segue destination="Foa-Ui-tga" kind="show" identifier="DetailSegue" id="BXa-gr-7j0"/>
                                 </connections>
@@ -114,7 +114,7 @@
                     </view>
                     <connections>
                         <outlet property="detailLabel" destination="VVW-Cl-hbD" id="QCx-nC-i6r"/>
-                        <outlet property="imageView" destination="BKT-1K-GGn" id="vEp-Ne-2HN"/>
+                        <outlet property="imageView" destination="BKT-1K-GGn" id="0Lu-Vo-tiJ"/>
                         <outlet property="nameLabel" destination="UMt-96-KaY" id="wow-Zh-LFv"/>
                     </connections>
                 </viewController>
