@@ -1,0 +1,37 @@
+//
+//  FriendsTableViewController.swift
+//  Friends
+//
+//  Created by Christopher Aronson on 5/16/19.
+//  Copyright © 2019 Christopher Aronson. All rights reserved.
+//
+
+import UIKit
+
+class FriendsTableViewController: UITableViewController {
+    let friendController = FriendController()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+
+    // MARK: - Table view data source
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return friendController.friends.count
+    }
+
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "FriendCell", for: indexPath) as? CellTableViewCell else { return UITableViewCell() }
+
+        cell.nameLabel.text = friendController.friends[indexPath.row].name
+        cell.profileImage.image = friendController.friends[indexPath.row].image
+
+        return cell
+    }
+
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+    }
+
+}
