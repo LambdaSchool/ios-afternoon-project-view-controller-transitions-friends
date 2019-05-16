@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		E885E890228DEFA100A8A553 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E885E88F228DEFA100A8A553 /* AppDelegate.swift */; };
-		E885E892228DEFA100A8A553 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E885E891228DEFA100A8A553 /* ViewController.swift */; };
 		E885E895228DEFA100A8A553 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E885E893228DEFA100A8A553 /* Main.storyboard */; };
 		E885E897228DEFA200A8A553 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E885E896228DEFA200A8A553 /* Assets.xcassets */; };
 		E885E89A228DEFA200A8A553 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E885E898228DEFA200A8A553 /* LaunchScreen.storyboard */; };
+		E885E8A2228DF39A00A8A553 /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E885E8A1228DF39A00A8A553 /* FriendsTableViewController.swift */; };
+		E885E8A4228DF3D200A8A553 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E885E8A3228DF3D200A8A553 /* FriendTableViewCell.swift */; };
+		E885E8A6228DF44B00A8A553 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E885E8A5228DF44B00A8A553 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E885E88C228DEFA100A8A553 /* view-controller-transitions-friends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "view-controller-transitions-friends.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E885E88F228DEFA100A8A553 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E885E891228DEFA100A8A553 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E885E894228DEFA100A8A553 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E885E896228DEFA200A8A553 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E885E899228DEFA200A8A553 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E885E89B228DEFA200A8A553 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E885E8A1228DF39A00A8A553 /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
+		E885E8A3228DF3D200A8A553 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		E885E8A5228DF44B00A8A553 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +59,23 @@
 			isa = PBXGroup;
 			children = (
 				E885E88F228DEFA100A8A553 /* AppDelegate.swift */,
-				E885E891228DEFA100A8A553 /* ViewController.swift */,
+				E885E8A7228DF45100A8A553 /* ViewControllers */,
 				E885E893228DEFA100A8A553 /* Main.storyboard */,
 				E885E896228DEFA200A8A553 /* Assets.xcassets */,
 				E885E898228DEFA200A8A553 /* LaunchScreen.storyboard */,
 				E885E89B228DEFA200A8A553 /* Info.plist */,
 			);
 			path = "view-controller-transitions-friends";
+			sourceTree = "<group>";
+		};
+		E885E8A7228DF45100A8A553 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E885E8A1228DF39A00A8A553 /* FriendsTableViewController.swift */,
+				E885E8A3228DF3D200A8A553 /* FriendTableViewCell.swift */,
+				E885E8A5228DF44B00A8A553 /* DetailViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E885E892228DEFA100A8A553 /* ViewController.swift in Sources */,
+				E885E8A4228DF3D200A8A553 /* FriendTableViewCell.swift in Sources */,
+				E885E8A2228DF39A00A8A553 /* FriendsTableViewController.swift in Sources */,
 				E885E890228DEFA100A8A553 /* AppDelegate.swift in Sources */,
+				E885E8A6228DF44B00A8A553 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
