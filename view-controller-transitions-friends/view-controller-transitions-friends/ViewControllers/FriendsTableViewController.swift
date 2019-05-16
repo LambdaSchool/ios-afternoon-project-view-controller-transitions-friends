@@ -11,7 +11,7 @@ import UIKit
 class FriendsTableViewController: UITableViewController {
 	override func viewDidLoad() {
         super.viewDidLoad()
-//		navigationController?.delegate = NavigationControllerDelegate
+		
 	}
 	
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

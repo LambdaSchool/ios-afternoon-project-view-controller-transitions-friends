@@ -11,7 +11,6 @@ import UIKit
 
 
 class NavigationControllerDelegate: NSObject, UINavigationControllerDelegate {
-	var sourceCell: FriendTableViewCell!
 	
 	
 	func navigationController(_ navigationController: UINavigationController,
@@ -20,7 +19,8 @@ class NavigationControllerDelegate: NSObject, UINavigationControllerDelegate {
 		
 		
 		
-		return nil
+		return animator
 	}
-	
+	var animator = ImageTransitionAnimator()
+	var sourceCell: FriendTableViewCell!
 }
