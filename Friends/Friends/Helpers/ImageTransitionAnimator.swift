@@ -45,15 +45,11 @@ class ImageTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
 		let startTextFrame = container.convert(sourceTextLabel.bounds, from: sourceTextLabel)//sourceTextLabel.frame
 		let destTextFrame = container.convert(destTextLabel.bounds, from: destTextLabel)//destTextLabel.frame
 
-		print(startTextFrame, destTextFrame)
-
-
 		let tempImageView = UIImageView(frame: startImageFrame)
 		tempImageView.image = sourceImageView.image
 		tempImageView.contentMode = .scaleAspectFit
 
 		let tempLabelView = UILabel(frame: startTextFrame)
-//		tempLabelView.sizeToFit()
 		tempLabelView.text = sourceTextLabel.text
 		tempLabelView.textAlignment = sourceTextLabel.textAlignment
 		tempLabelView.textColor = sourceTextLabel.textColor
@@ -77,12 +73,11 @@ class ImageTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
 			tempImageView.frame = destImageFrame
 			tempLabelView.font = destTextLabel.font
 			destView.alpha = 1
-//			sourceView?.alpha = 0
 
 		}) { _ in
 			tempImageView.removeFromSuperview()
 			tempLabelView.removeFromSuperview()
-//			destView.alpha = 1
+
 			sourceTextLabel.alpha = 1
 			destTextLabel.alpha = 1
 			sourceImageView.alpha = 1
