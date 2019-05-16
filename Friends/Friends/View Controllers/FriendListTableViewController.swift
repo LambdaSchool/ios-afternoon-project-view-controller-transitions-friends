@@ -32,14 +32,22 @@ class FriendListTableViewController: UITableViewController {
         return cell
     }
 
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "ShowDetail" {
+            
+            guard let destinationVC = segue.destination as? FriendDetailViewController else {
+                NSLog("destinationVC unable to cast as FriendDetailViewController")
+                return
+            }
+            guard let indexPath = tableView.indexPathForSelectedRow else {
+                NSLog("Unable to get indexPath for selected row")
+                return
+            }
+            
+            destinationVC.friend = friendController.friends[indexPath.row]
+        }
     }
-    */
 
 }

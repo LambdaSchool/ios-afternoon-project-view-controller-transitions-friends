@@ -9,17 +9,29 @@
 import UIKit
 
 class FriendDetailViewController: UIViewController {
+    
+    var friend: Friend?
 
     @IBOutlet weak var friendImage: UIImageView!
     @IBOutlet weak var friendNameLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        updateViews()
     }
     
-
+    private func updateViews() {
+        
+        guard let friend = friend else {
+            NSLog("Unable to update views: friend is nil")
+            return
+        }
+        
+        friendImage.image = friend.image
+        friendNameLabel.text = friend.name
+        navigationItem.title = friend.name
+    }
     /*
     // MARK: - Navigation
 
