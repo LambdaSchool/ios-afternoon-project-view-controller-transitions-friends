@@ -17,6 +17,8 @@
 		33A5D960228DF96B007467EF /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A5D95F228DF96B007467EF /* NetworkHandler.swift */; };
 		33A5D962228DFD1C007467EF /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A5D961228DFD1C007467EF /* FriendTableViewCell.swift */; };
 		33A5D968228E01E6007467EF /* FriendDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A5D967228E01E6007467EF /* FriendDetailViewController.swift */; };
+		33A5D96A228E04F5007467EF /* NavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A5D969228E04F5007467EF /* NavigationControllerDelegate.swift */; };
+		33A5D96C228E054F007467EF /* ImageTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A5D96B228E054F007467EF /* ImageTransitionAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		33A5D95F228DF96B007467EF /* NetworkHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
 		33A5D961228DFD1C007467EF /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		33A5D967228E01E6007467EF /* FriendDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailViewController.swift; sourceTree = "<group>"; };
+		33A5D969228E04F5007467EF /* NavigationControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerDelegate.swift; sourceTree = "<group>"; };
+		33A5D96B228E054F007467EF /* ImageTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTransitionAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				33A5D95C228DF94F007467EF /* UIAlertController+NetError.swift */,
 				33A5D95F228DF96B007467EF /* NetworkHandler.swift */,
+				33A5D969228E04F5007467EF /* NavigationControllerDelegate.swift */,
+				33A5D96B228E054F007467EF /* ImageTransitionAnimator.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -185,7 +191,9 @@
 				33A5D958228DF7E8007467EF /* Friend.swift in Sources */,
 				33A5D948228DF771007467EF /* FriendsTableViewController.swift in Sources */,
 				33A5D95E228DF94F007467EF /* UIAlertController+NetError.swift in Sources */,
+				33A5D96C228E054F007467EF /* ImageTransitionAnimator.swift in Sources */,
 				33A5D962228DFD1C007467EF /* FriendTableViewCell.swift in Sources */,
+				33A5D96A228E04F5007467EF /* NavigationControllerDelegate.swift in Sources */,
 				33A5D960228DF96B007467EF /* NetworkHandler.swift in Sources */,
 				33A5D946228DF771007467EF /* AppDelegate.swift in Sources */,
 				33A5D968228E01E6007467EF /* FriendDetailViewController.swift in Sources */,
