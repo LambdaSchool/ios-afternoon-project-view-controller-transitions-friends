@@ -15,6 +15,8 @@ class NavigationControllerDelegate: NSObject, UINavigationControllerDelegate {
     
     func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         
+        toVC.loadViewIfNeeded()
+        
         if let toVC = toVC as? FriendDetailViewController,
             let sourceCell = sourceCell {
             
@@ -23,6 +25,13 @@ class NavigationControllerDelegate: NSObject, UINavigationControllerDelegate {
             
             animator.sourceNameLabel = sourceCell.textLabel
             animator.sourceImageView = sourceCell.imageView
+        } else if let fromVC = fromVC as? FriendDetailViewController {
+            
+            animator.destinationImageView = sourceCell?.imageView
+            animator.destinationNameLabel = sourceCell?.textLabel
+            
+            animator.sourceNameLabel = fromVC.friendNameLabel
+            animator.sourceImageView = fromVC.friendImage
         } else {
             NSLog("Unable to cask fromVC and toVC to correct types")
         }
