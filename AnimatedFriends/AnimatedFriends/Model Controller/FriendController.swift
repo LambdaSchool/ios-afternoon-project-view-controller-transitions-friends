@@ -15,7 +15,7 @@ class FriendController {
     
     // MARK: - Initializers
     init() {
-        let names: [String] = ["Lisa", "Grant"]
+        let names: [String] = ["Lisa Sampson", "Grant Butler"]
         let images: [UIImage] = [UIImage(named: "lisaprof")!, UIImage(named: "grant")!]
         let jobs: [String] = ["iOS Student", "Senior iOS Engineer"]
         
