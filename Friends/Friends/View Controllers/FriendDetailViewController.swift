@@ -8,7 +8,18 @@
 
 import UIKit
 
-class FriendDetailViewController: UIViewController {
+class FriendDetailViewController: UIViewController, ImageTransitionProtocol {
+
+	var transitionImageView: UIImageView? {
+		get {
+			return friendImageView
+		}
+	}
+	var transitionLabel: UILabel? {
+		get {
+			return friendNameLabel
+		}
+	}
 
 	@IBOutlet var friendNameLabel: UILabel!
 	@IBOutlet var friendImageView: UIImageView!

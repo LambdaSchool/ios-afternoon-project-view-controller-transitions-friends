@@ -8,14 +8,21 @@
 
 import UIKit
 
-class FriendsTableViewController: UITableViewController {
+class FriendsTableViewController: UITableViewController, ImageTransitionProtocol {
+
+	var transitionLabel: UILabel?
+	var transitionImageView: UIImageView?
 
 	var friends: [Friend] = []
 	let networkHandler = NetworkHandler()
 
+	let navigationControllerDelegate = NavigationControllerDelegate()
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		setupFriends()
+
+		navigationController?.delegate = navigationControllerDelegate
 	}
 
 	func setupFriends() {
@@ -33,7 +40,14 @@ class FriendsTableViewController: UITableViewController {
 		if let dest = segue.destination as? FriendDetailViewController {
 			dest.networkHandler = networkHandler
 			guard let indexPath = tableView.indexPathForSelectedRow else { return }
+			//maybe call load if needed here
 			dest.friend = friends[indexPath.row]
+
+			let cell = tableView.cellForRow(at: indexPath)
+			transitionLabel = cell?.textLabel
+			transitionImageView = cell?.imageView
+
+//			navigationControllerDelegate.sourceCell = cell
 		}
 	}
 }
