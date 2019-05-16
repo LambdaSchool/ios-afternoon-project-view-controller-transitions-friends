@@ -10,7 +10,10 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    override func viewDidLoad() {
+	@IBOutlet var imageView: UIImageView!
+	@IBOutlet var nameLabel: UILabel!
+	@IBOutlet var detailLabel: UILabel!
+	override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

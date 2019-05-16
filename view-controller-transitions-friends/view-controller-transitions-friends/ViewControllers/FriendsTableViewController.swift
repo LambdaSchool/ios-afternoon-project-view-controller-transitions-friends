@@ -10,8 +10,8 @@ import UIKit
 
 class FriendsTableViewController: UITableViewController {
 
-	@IBOutlet var friendImageView: UIImageView!
-	@IBOutlet var nameLabel: UILabel!
+
+	
 	override func viewDidLoad() {
         super.viewDidLoad()
 
