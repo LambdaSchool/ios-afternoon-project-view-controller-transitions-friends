@@ -13,6 +13,8 @@ class DetailViewController: UIViewController, UIViewControllerTransitioningDeleg
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		setupViews()
+		
+		
 	}
 	
 	private func setupViews() {

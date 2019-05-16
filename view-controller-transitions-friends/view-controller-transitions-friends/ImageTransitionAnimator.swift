@@ -14,8 +14,20 @@ class ImageTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
 	}
 	
 	func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+		guard let toVC = transitionContext.viewController(forKey: .from) as? DetailViewController,
+			let toView = transitionContext.view(forKey: .to) else { return }
 		
+		let containerView = transitionContext.containerView
+		let toViewEndFrame = transitionContext.finalFrame(for: toVC)
+	
+		
+		
+		containerView.addSubview(toView)
+		toView.frame = toViewEndFrame
+		toView.alpha = 0
 	}
+	
+	
 	
 
 }
