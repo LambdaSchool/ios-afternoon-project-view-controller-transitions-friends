@@ -63,17 +63,49 @@
 			isa = PBXGroup;
 			children = (
 				33A5D945228DF771007467EF /* AppDelegate.swift */,
-				33A5D95C228DF94F007467EF /* UIAlertController+NetError.swift */,
-				33A5D95F228DF96B007467EF /* NetworkHandler.swift */,
-				33A5D957228DF7E8007467EF /* Friend.swift */,
-				33A5D947228DF771007467EF /* FriendsTableViewController.swift */,
-				33A5D961228DFD1C007467EF /* FriendTableViewCell.swift */,
+				33A5D965228E01B6007467EF /* Helpers */,
+				33A5D964228E01AF007467EF /* Model */,
+				33A5D963228E01A5007467EF /* View Controllers */,
+				33A5D966228E01BC007467EF /* Views */,
 				33A5D949228DF771007467EF /* Main.storyboard */,
 				33A5D94C228DF773007467EF /* Assets.xcassets */,
 				33A5D94E228DF773007467EF /* LaunchScreen.storyboard */,
 				33A5D951228DF773007467EF /* Info.plist */,
 			);
 			path = Friends;
+			sourceTree = "<group>";
+		};
+		33A5D963228E01A5007467EF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				33A5D947228DF771007467EF /* FriendsTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		33A5D964228E01AF007467EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				33A5D957228DF7E8007467EF /* Friend.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33A5D965228E01B6007467EF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				33A5D95C228DF94F007467EF /* UIAlertController+NetError.swift */,
+				33A5D95F228DF96B007467EF /* NetworkHandler.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		33A5D966228E01BC007467EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				33A5D961228DFD1C007467EF /* FriendTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
