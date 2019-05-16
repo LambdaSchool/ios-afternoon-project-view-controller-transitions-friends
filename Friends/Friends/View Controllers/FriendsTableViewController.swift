@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FriendsTableViewController: UITableViewController {
+class FriendsTableViewController: UITableViewController, UIViewControllerTransitioningDelegate {
     let friendController = FriendController()
     
     override func viewDidLoad() {

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CellTableViewCell: UITableViewCell {
+class CellTableViewCell: UITableViewCell, UIViewControllerTransitioningDelegate {
     
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FriendsDetailViewController: UIViewController {
+class FriendsDetailViewController: UIViewController, UIViewControllerTransitioningDelegate {
     var friend: Friend?
 
     @IBOutlet weak var profilePictureImageView: UIImageView!

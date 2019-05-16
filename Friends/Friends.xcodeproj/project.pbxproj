@@ -16,6 +16,9 @@
 		EC98CD11228DF8350058738D /* CellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC98CD10228DF8350058738D /* CellTableViewCell.swift */; };
 		ECABEABE228DFA36002AE6F6 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECABEABD228DFA36002AE6F6 /* Friend.swift */; };
 		ECABEAC0228DFB31002AE6F6 /* FriendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECABEABF228DFB31002AE6F6 /* FriendController.swift */; };
+		ECABEAC3228E0408002AE6F6 /* FriendProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECABEAC2228E0408002AE6F6 /* FriendProviding.swift */; };
+		ECABEAC5228E04B7002AE6F6 /* ImageTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECABEAC4228E04B7002AE6F6 /* ImageTransitionAnimator.swift */; };
+		ECABEAC7228E0F30002AE6F6 /* NavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECABEAC6228E0F30002AE6F6 /* NavigationControllerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		EC98CD10228DF8350058738D /* CellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTableViewCell.swift; sourceTree = "<group>"; };
 		ECABEABD228DFA36002AE6F6 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		ECABEABF228DFB31002AE6F6 /* FriendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendController.swift; sourceTree = "<group>"; };
+		ECABEAC2228E0408002AE6F6 /* FriendProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendProviding.swift; sourceTree = "<group>"; };
+		ECABEAC4228E04B7002AE6F6 /* ImageTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTransitionAnimator.swift; sourceTree = "<group>"; };
+		ECABEAC6228E0F30002AE6F6 /* NavigationControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,7 @@
 		EC98CCF0228DECBF0058738D /* Friends */ = {
 			isa = PBXGroup;
 			children = (
+				ECABEAC1228E038D002AE6F6 /* Animation */,
 				EC98CD07228DED190058738D /* Model */,
 				EC98CD06228DED0D0058738D /* Model Controller */,
 				EC98CD05228DECED0058738D /* View Controllers */,
@@ -120,8 +127,18 @@
 			isa = PBXGroup;
 			children = (
 				EC98CD10228DF8350058738D /* CellTableViewCell.swift */,
+				ECABEAC6228E0F30002AE6F6 /* NavigationControllerDelegate.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		ECABEAC1228E038D002AE6F6 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				ECABEAC2228E0408002AE6F6 /* FriendProviding.swift */,
+				ECABEAC4228E04B7002AE6F6 /* ImageTransitionAnimator.swift */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +216,9 @@
 				ECABEAC0228DFB31002AE6F6 /* FriendController.swift in Sources */,
 				EC98CD11228DF8350058738D /* CellTableViewCell.swift in Sources */,
 				ECABEABE228DFA36002AE6F6 /* Friend.swift in Sources */,
+				ECABEAC7228E0F30002AE6F6 /* NavigationControllerDelegate.swift in Sources */,
+				ECABEAC5228E04B7002AE6F6 /* ImageTransitionAnimator.swift in Sources */,
+				ECABEAC3228E0408002AE6F6 /* FriendProviding.swift in Sources */,
 				EC98CCF2228DECBF0058738D /* AppDelegate.swift in Sources */,
 				EC98CD0B228DF5C70058738D /* FriendsDetailViewController.swift in Sources */,
 			);
