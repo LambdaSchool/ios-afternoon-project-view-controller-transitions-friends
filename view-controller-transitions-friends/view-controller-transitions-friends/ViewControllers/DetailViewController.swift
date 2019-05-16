@@ -28,9 +28,5 @@ class DetailViewController: UIViewController {
 	@IBOutlet var nameLabel: UILabel!
 	@IBOutlet var detailLabel: UILabel!
 	
-	var friend: Friend? {
-		didSet {
-			setupViews()
-		}
-	}
+	var friend: Friend?
 }
