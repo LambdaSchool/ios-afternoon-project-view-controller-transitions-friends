@@ -28,5 +28,20 @@ class FriendsTableViewController: UITableViewController {
 		return friendCell
 	}
 	
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		
+		if segue.identifier == "DetailSegue" {
+			guard let vc = segue.destination as? DetailViewController,
+				let cell = sender as? FriendTableViewCell,
+				let indexPath = tableView.indexPath(for: cell)	else { return }
+			
+			let friend = controller.friendList[indexPath.row]
+			vc.friend = friend
+			
+		}
+		
+	}
+	
+	
 	var controller = FriendController()
 }
