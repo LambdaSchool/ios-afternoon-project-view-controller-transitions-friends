@@ -17,6 +17,7 @@
 		FF2E052B228E05B40001D190 /* FriendDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E052A228E05B40001D190 /* FriendDetailViewController.swift */; };
 		FF2E052D228E0AF90001D190 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E052C228E0AF80001D190 /* FriendTableViewCell.swift */; };
 		FF2E052F228E101B0001D190 /* NavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E052E228E101B0001D190 /* NavigationControllerDelegate.swift */; };
+		FF2E0531228E125C0001D190 /* ImageTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E0530228E125C0001D190 /* ImageTransitionAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		FF2E052A228E05B40001D190 /* FriendDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailViewController.swift; sourceTree = "<group>"; };
 		FF2E052C228E0AF80001D190 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		FF2E052E228E101B0001D190 /* NavigationControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerDelegate.swift; sourceTree = "<group>"; };
+		FF2E0530228E125C0001D190 /* ImageTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTransitionAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				FF2E052E228E101B0001D190 /* NavigationControllerDelegate.swift */,
+				FF2E0530228E125C0001D190 /* ImageTransitionAnimator.swift */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF2E0523228E056A0001D190 /* Friend.swift in Sources */,
+				FF2E0531228E125C0001D190 /* ImageTransitionAnimator.swift in Sources */,
 				FF2E0525228E05750001D190 /* FriendController.swift in Sources */,
 				FF2E0529228E05A00001D190 /* FriendsTableViewController.swift in Sources */,
 				FF2E052D228E0AF90001D190 /* FriendTableViewCell.swift in Sources */,
