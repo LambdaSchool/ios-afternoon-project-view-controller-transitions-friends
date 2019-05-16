@@ -11,9 +11,12 @@ import UIKit
 class FriendListTableViewController: UITableViewController {
     
     private let friendController = FriendController()
+    let navigationControllerDelegate = NavigationControllerDelegate()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationController?.delegate = navigationControllerDelegate
     }
 
     // MARK: - Table view data source
@@ -35,6 +38,13 @@ class FriendListTableViewController: UITableViewController {
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let indexPath = tableView.indexPathForSelectedRow  {
+            navigationControllerDelegate.sourceCell = tableView.cellForRow(at: indexPath)
+        } else {
+            NSLog("Unable to get indexPath for selected row")
+        }
+        
         if segue.identifier == "ShowDetail" {
             
             guard let destinationVC = segue.destination as? FriendDetailViewController else {
@@ -49,5 +59,4 @@ class FriendListTableViewController: UITableViewController {
             destinationVC.friend = friendController.friends[indexPath.row]
         }
     }
-
 }

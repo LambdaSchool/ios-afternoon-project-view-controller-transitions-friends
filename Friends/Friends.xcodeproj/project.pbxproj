@@ -15,6 +15,8 @@
 		73400211228DEEBC0012723F /* FriendDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73400210228DEEBC0012723F /* FriendDetailViewController.swift */; };
 		73400214228DF0AE0012723F /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73400213228DF0AE0012723F /* Friend.swift */; };
 		73400216228DF0D50012723F /* FriendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73400215228DF0D50012723F /* FriendController.swift */; };
+		73400218228DF3E20012723F /* NavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73400217228DF3E20012723F /* NavigationControllerDelegate.swift */; };
+		7340021A228DF48C0012723F /* ImageTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73400219228DF48C0012723F /* ImageTransitionAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		73400210228DEEBC0012723F /* FriendDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailViewController.swift; sourceTree = "<group>"; };
 		73400213228DF0AE0012723F /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		73400215228DF0D50012723F /* FriendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendController.swift; sourceTree = "<group>"; };
+		73400217228DF3E20012723F /* NavigationControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerDelegate.swift; sourceTree = "<group>"; };
+		73400219228DF48C0012723F /* ImageTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTransitionAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 			isa = PBXGroup;
 			children = (
 				734001FC228DEDAA0012723F /* AppDelegate.swift */,
+				73400217228DF3E20012723F /* NavigationControllerDelegate.swift */,
+				73400219228DF48C0012723F /* ImageTransitionAnimator.swift */,
 				73400213228DF0AE0012723F /* Friend.swift */,
 				73400215228DF0D50012723F /* FriendController.swift */,
 				73400212228DEEC40012723F /* View Controllers */,
@@ -156,7 +162,9 @@
 				734001FD228DEDAA0012723F /* AppDelegate.swift in Sources */,
 				73400216228DF0D50012723F /* FriendController.swift in Sources */,
 				73400211228DEEBC0012723F /* FriendDetailViewController.swift in Sources */,
+				73400218228DF3E20012723F /* NavigationControllerDelegate.swift in Sources */,
 				73400214228DF0AE0012723F /* Friend.swift in Sources */,
+				7340021A228DF48C0012723F /* ImageTransitionAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
