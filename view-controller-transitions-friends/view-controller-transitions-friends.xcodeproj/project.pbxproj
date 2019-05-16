@@ -16,6 +16,8 @@
 		E885E8A6228DF44B00A8A553 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E885E8A5228DF44B00A8A553 /* DetailViewController.swift */; };
 		E885E8A9228DF65800A8A553 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = E885E8A8228DF65800A8A553 /* Friend.swift */; };
 		E885E8AB228DFB2C00A8A553 /* FriendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E885E8AA228DFB2C00A8A553 /* FriendController.swift */; };
+		E885E8AD228E004E00A8A553 /* NavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E885E8AC228E004E00A8A553 /* NavigationControllerDelegate.swift */; };
+		E885E8AF228E020B00A8A553 /* ImageTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E885E8AE228E020B00A8A553 /* ImageTransitionAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		E885E8A5228DF44B00A8A553 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		E885E8A8228DF65800A8A553 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		E885E8AA228DFB2C00A8A553 /* FriendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendController.swift; sourceTree = "<group>"; };
+		E885E8AC228E004E00A8A553 /* NavigationControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerDelegate.swift; sourceTree = "<group>"; };
+		E885E8AE228E020B00A8A553 /* ImageTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTransitionAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +67,9 @@
 			isa = PBXGroup;
 			children = (
 				E885E88F228DEFA100A8A553 /* AppDelegate.swift */,
-				E885E8A8228DF65800A8A553 /* Friend.swift */,
-				E885E8AA228DFB2C00A8A553 /* FriendController.swift */,
+				E885E8B0228E021C00A8A553 /* Model and Controller */,
+				E885E8AC228E004E00A8A553 /* NavigationControllerDelegate.swift */,
+				E885E8AE228E020B00A8A553 /* ImageTransitionAnimator.swift */,
 				E885E8A7228DF45100A8A553 /* ViewControllers */,
 				E885E893228DEFA100A8A553 /* Main.storyboard */,
 				E885E896228DEFA200A8A553 /* Assets.xcassets */,
@@ -82,6 +87,15 @@
 				E885E8A5228DF44B00A8A553 /* DetailViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E885E8B0228E021C00A8A553 /* Model and Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E885E8A8228DF65800A8A553 /* Friend.swift */,
+				E885E8AA228DFB2C00A8A553 /* FriendController.swift */,
+			);
+			path = "Model and Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,10 +170,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E885E8A4228DF3D200A8A553 /* FriendTableViewCell.swift in Sources */,
+				E885E8AF228E020B00A8A553 /* ImageTransitionAnimator.swift in Sources */,
 				E885E8AB228DFB2C00A8A553 /* FriendController.swift in Sources */,
 				E885E8A2228DF39A00A8A553 /* FriendsTableViewController.swift in Sources */,
 				E885E8A9228DF65800A8A553 /* Friend.swift in Sources */,
 				E885E890228DEFA100A8A553 /* AppDelegate.swift in Sources */,
+				E885E8AD228E004E00A8A553 /* NavigationControllerDelegate.swift in Sources */,
 				E885E8A6228DF44B00A8A553 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
