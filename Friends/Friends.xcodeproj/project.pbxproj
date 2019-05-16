@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		734001FD228DEDAA0012723F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734001FC228DEDAA0012723F /* AppDelegate.swift */; };
-		734001FF228DEDAA0012723F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734001FE228DEDAA0012723F /* ViewController.swift */; };
 		73400202228DEDAA0012723F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73400200228DEDAA0012723F /* Main.storyboard */; };
 		73400204228DEDB10012723F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73400203228DEDB10012723F /* Assets.xcassets */; };
 		73400207228DEDB10012723F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73400205228DEDB10012723F /* LaunchScreen.storyboard */; };
+		7340020F228DEEA60012723F /* FriendListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7340020E228DEEA60012723F /* FriendListTableViewController.swift */; };
+		73400211228DEEBC0012723F /* FriendDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73400210228DEEBC0012723F /* FriendDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		734001F9228DEDAA0012723F /* Friends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Friends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		734001FC228DEDAA0012723F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		734001FE228DEDAA0012723F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		73400201228DEDAA0012723F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73400203228DEDB10012723F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73400206228DEDB10012723F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73400208228DEDB10012723F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7340020E228DEEA60012723F /* FriendListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListTableViewController.swift; sourceTree = "<group>"; };
+		73400210228DEEBC0012723F /* FriendDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +57,22 @@
 			isa = PBXGroup;
 			children = (
 				734001FC228DEDAA0012723F /* AppDelegate.swift */,
-				734001FE228DEDAA0012723F /* ViewController.swift */,
+				73400212228DEEC40012723F /* View Controllers */,
 				73400200228DEDAA0012723F /* Main.storyboard */,
 				73400203228DEDB10012723F /* Assets.xcassets */,
 				73400205228DEDB10012723F /* LaunchScreen.storyboard */,
 				73400208228DEDB10012723F /* Info.plist */,
 			);
 			path = Friends;
+			sourceTree = "<group>";
+		};
+		73400212228DEEC40012723F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7340020E228DEEA60012723F /* FriendListTableViewController.swift */,
+				73400210228DEEBC0012723F /* FriendDetailViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				734001FF228DEDAA0012723F /* ViewController.swift in Sources */,
+				7340020F228DEEA60012723F /* FriendListTableViewController.swift in Sources */,
 				734001FD228DEDAA0012723F /* AppDelegate.swift in Sources */,
+				73400211228DEEBC0012723F /* FriendDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
