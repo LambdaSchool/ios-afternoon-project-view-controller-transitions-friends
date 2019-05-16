@@ -22,7 +22,7 @@ class ImageTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
 	var destTextLabel: UILabel?
 
 	func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-		return 3
+		return 0.5
 	}
 
 	func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
@@ -45,34 +45,49 @@ class ImageTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
 		let startTextFrame = container.convert(sourceTextLabel.bounds, from: sourceTextLabel)//sourceTextLabel.frame
 		let destTextFrame = container.convert(destTextLabel.bounds, from: destTextLabel)//destTextLabel.frame
 
+		print(startTextFrame, destTextFrame)
+
 
 		let tempImageView = UIImageView(frame: startImageFrame)
 		tempImageView.image = sourceImageView.image
+		tempImageView.contentMode = .scaleAspectFit
+
 		let tempLabelView = UILabel(frame: startTextFrame)
+//		tempLabelView.sizeToFit()
 		tempLabelView.text = sourceTextLabel.text
 		tempLabelView.textAlignment = sourceTextLabel.textAlignment
 		tempLabelView.textColor = sourceTextLabel.textColor
 		tempLabelView.font = sourceTextLabel.font
+
 		container.addSubview(tempImageView)
 		container.addSubview(tempLabelView)
+
 		destView.alpha = 0
-//		sourceView?.alpha = 0
+		sourceTextLabel.alpha = 0
+		destTextLabel.alpha = 0
+		sourceImageView.alpha = 0
+		destImageView.alpha = 0
 
 		destView.layoutIfNeeded()
 
 		let duration = transitionDuration(using: transitionContext)
 		UIView.animate(withDuration: duration, animations: {
 			tempLabelView.frame = destTextFrame
+			tempLabelView.frame.size = sourceTextLabel.frame.size
 			tempImageView.frame = destImageFrame
 			tempLabelView.font = destTextLabel.font
 			destView.alpha = 1
-			sourceView?.alpha = 0
+//			sourceView?.alpha = 0
 
 		}) { _ in
 			tempImageView.removeFromSuperview()
 			tempLabelView.removeFromSuperview()
-			destView.alpha = 1
-			sourceView?.alpha = 0
+//			destView.alpha = 1
+			sourceTextLabel.alpha = 1
+			destTextLabel.alpha = 1
+			sourceImageView.alpha = 1
+			destImageView.alpha = 1
+			sourceView?.alpha = 1
 			transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
 		}
 	}

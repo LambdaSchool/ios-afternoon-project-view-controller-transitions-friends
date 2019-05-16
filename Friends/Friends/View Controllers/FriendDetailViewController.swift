@@ -42,6 +42,9 @@ class FriendDetailViewController: UIViewController, ImageTransitionProtocol {
 		friendNameLabel.text = friend.name
 		friendBio.text = friend.bio
 
+		friendImageView.widthAnchor.constraint(equalTo: friendImageView.heightAnchor, multiplier: 1).isActive = true
+		friendImageView.contentMode = .scaleAspectFit
+
 		guard let url = URL(string: friend.imageURL) else { return }
 		let request = URLRequest(url: url)
 		networkHandler?.transferMahDatas(with: request, completion: { [weak self] (result: Result<Data, NetworkError>) in

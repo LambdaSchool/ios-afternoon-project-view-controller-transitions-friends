@@ -40,14 +40,14 @@ class FriendsTableViewController: UITableViewController, ImageTransitionProtocol
 		if let dest = segue.destination as? FriendDetailViewController {
 			dest.networkHandler = networkHandler
 			guard let indexPath = tableView.indexPathForSelectedRow else { return }
+			dest.loadViewIfNeeded()
+//			dest.view.layoutIfNeeded()
 			//maybe call load if needed here
 			dest.friend = friends[indexPath.row]
 
 			let cell = tableView.cellForRow(at: indexPath)
 			transitionLabel = cell?.textLabel
 			transitionImageView = cell?.imageView
-
-//			navigationControllerDelegate.sourceCell = cell
 		}
 	}
 }

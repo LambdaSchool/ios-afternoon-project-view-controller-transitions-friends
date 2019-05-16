@@ -17,7 +17,7 @@ class NavigationControllerDelegate: NSObject, UINavigationControllerDelegate {
 	func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
 
 		guard let dest = toVC as? ImageTransitionProtocol, let source = fromVC as? ImageTransitionProtocol else { return nil }
-		dest.loadViewIfNeeded()
+//		dest.loadViewIfNeeded()
 
 		animator.sourceImageView = source.transitionImageView
 		animator.destImageView = dest.transitionImageView
