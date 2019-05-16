@@ -10,16 +10,17 @@ import UIKit
 
 class FriendTableViewCell: UITableViewCell {
 
-	@IBOutlet var friendImageView: UIImageView!
-	@IBOutlet var nameLabel: UILabel!
+	
+	
 	
 	private func setupViews() {
 		guard let friend = friend else { return }
-	
-		
 		friendImageView.image = friend.image
-	
+		nameLabel.text = friend.name
 	}
+	
+	@IBOutlet var friendImageView: UIImageView!
+	@IBOutlet var nameLabel: UILabel!
 	
 	var friend: Friend?{
 		didSet {
