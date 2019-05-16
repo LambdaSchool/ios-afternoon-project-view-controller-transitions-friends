@@ -48,6 +48,8 @@ class ImageTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
 		let tempImageView = UIImageView(frame: startImageFrame)
 		tempImageView.image = sourceImageView.image
 		tempImageView.contentMode = .scaleAspectFit
+		tempImageView.layer.cornerRadius = sourceImageView.layer.cornerRadius
+		tempImageView.clipsToBounds = true
 
 		let tempLabelView = UILabel(frame: startTextFrame)
 		tempLabelView.text = sourceTextLabel.text
@@ -70,8 +72,11 @@ class ImageTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
 		UIView.animate(withDuration: duration, animations: {
 			tempLabelView.frame = destTextFrame
 			tempLabelView.frame.size = sourceTextLabel.frame.size
-			tempImageView.frame = destImageFrame
 			tempLabelView.font = destTextLabel.font
+
+			tempImageView.frame = destImageFrame
+			tempImageView.layer.cornerRadius = destImageView.layer.cornerRadius
+
 			destView.alpha = 1
 
 		}) { _ in

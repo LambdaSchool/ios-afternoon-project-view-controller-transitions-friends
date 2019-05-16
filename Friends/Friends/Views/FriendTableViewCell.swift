@@ -30,11 +30,21 @@ class FriendTableViewCell: UITableViewCell {
 				DispatchQueue.main.async {
 					self?.imageView?.image = image
 					self?.layoutSubviews()
+					self?.roundCorners()
 				}
 			} catch {
 				print(error)
 			}
 		})
+	}
+
+	private func roundCorners() {
+		guard let imageView = imageView else { return }
+		let smallerDimension = min(imageView.frame.size.width, imageView.frame.size.height)
+		imageView.layer.cornerRadius = smallerDimension / 2
+//		print(smallerDimension)
+//		imageView.alpha = 0.1
+		imageView.clipsToBounds = true
 	}
 
 }
