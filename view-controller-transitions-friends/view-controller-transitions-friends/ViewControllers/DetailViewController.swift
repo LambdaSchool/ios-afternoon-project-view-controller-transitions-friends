@@ -12,12 +12,25 @@ class DetailViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		setupViews()
+	}
+	
+	private func setupViews() {
+		guard let friend = friend else { return }
 		
+		imageView?.image = friend.image
+		nameLabel?.text = friend.name
+		detailLabel?.text = friend.detail
 	}
 
 
 	@IBOutlet var imageView: UIImageView!
 	@IBOutlet var nameLabel: UILabel!
 	@IBOutlet var detailLabel: UILabel!
-	var friend: Friend?
+	
+	var friend: Friend? {
+		didSet {
+			setupViews()
+		}
+	}
 }
