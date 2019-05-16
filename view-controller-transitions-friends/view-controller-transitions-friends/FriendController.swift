@@ -18,7 +18,7 @@ class FriendController {
 		let f1 = Friend(name: "Hector",image: image1 , detail: "iOS6")
 		friendList.append(f1)
 		let image2 = UIImage(named: "BenGit")!
-		let f2 = Friend(name: "Ben",image: image2 , detail: "iOS6")
+		let f2 = Friend(name: "Ben",image: image2 , detail: "iOS6 Instructor ")
 		friendList.append(f2)
 	}
 	

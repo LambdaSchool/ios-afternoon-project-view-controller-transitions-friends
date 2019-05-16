@@ -15,7 +15,7 @@ class FriendsTableViewController: UITableViewController {
 	}
 	
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return friendList.count
+		return controller.friendList.count
 	}
 	
 	
@@ -23,10 +23,10 @@ class FriendsTableViewController: UITableViewController {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "FriendCell", for: indexPath)
 		
 		guard let friendCell = cell as? FriendTableViewCell else { return cell }
-		let friend = friendList[indexPath.row]
+		let friend = controller.friendList[indexPath.row]
 		friendCell.friend = friend
 		return friendCell
 	}
 	
-	var friendList: [Friend] = []
+	var controller = FriendController()
 }
