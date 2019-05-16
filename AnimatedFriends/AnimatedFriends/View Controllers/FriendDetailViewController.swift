@@ -9,22 +9,26 @@
 import UIKit
 
 class FriendDetailViewController: UIViewController {
-
+    
+    // MARK: - Properties and Outlets
+    var friend: Friend?
+    
+    @IBOutlet weak var friendName: UILabel!
+    @IBOutlet weak var friendJob: UILabel!
+    @IBOutlet weak var friendImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        updateViews()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func updateViews() {
+        guard let friend = friend else { return }
+        
+        title = friend.name
+        friendName.text = friend.name
+        friendJob.text = friend.job
+        friendImage.image = friend.image
     }
-    */
-
 }

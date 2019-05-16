@@ -13,9 +13,9 @@
 		FF2E0514228DDBB70001D190 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF2E0512228DDBB70001D190 /* LaunchScreen.storyboard */; };
 		FF2E0523228E056A0001D190 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E0522228E056A0001D190 /* Friend.swift */; };
 		FF2E0525228E05750001D190 /* FriendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E0524228E05750001D190 /* FriendController.swift */; };
-		FF2E0527228E05870001D190 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E0526228E05870001D190 /* FriendTableViewCell.swift */; };
 		FF2E0529228E05A00001D190 /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E0528228E05A00001D190 /* FriendsTableViewController.swift */; };
 		FF2E052B228E05B40001D190 /* FriendDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E052A228E05B40001D190 /* FriendDetailViewController.swift */; };
+		FF2E052D228E0AF90001D190 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E052C228E0AF80001D190 /* FriendTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +27,9 @@
 		FF2E0515228DDBB70001D190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF2E0522228E056A0001D190 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		FF2E0524228E05750001D190 /* FriendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendController.swift; sourceTree = "<group>"; };
-		FF2E0526228E05870001D190 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		FF2E0528228E05A00001D190 /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
 		FF2E052A228E05B40001D190 /* FriendDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailViewController.swift; sourceTree = "<group>"; };
+		FF2E052C228E0AF80001D190 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +104,7 @@
 		FF2E051E228E053A0001D190 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FF2E0526228E05870001D190 /* FriendTableViewCell.swift */,
+				FF2E052C228E0AF80001D190 /* FriendTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -206,7 +206,7 @@
 				FF2E0523228E056A0001D190 /* Friend.swift in Sources */,
 				FF2E0525228E05750001D190 /* FriendController.swift in Sources */,
 				FF2E0529228E05A00001D190 /* FriendsTableViewController.swift in Sources */,
-				FF2E0527228E05870001D190 /* FriendTableViewCell.swift in Sources */,
+				FF2E052D228E0AF90001D190 /* FriendTableViewCell.swift in Sources */,
 				FF2E050A228DDBB60001D190 /* AppDelegate.swift in Sources */,
 				FF2E052B228E05B40001D190 /* FriendDetailViewController.swift in Sources */,
 			);
@@ -356,7 +356,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2LA5UAXN45;
-				INFOPLIST_FILE = AnimatedFriends/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AnimatedFriends/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -374,7 +374,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2LA5UAXN45;
-				INFOPLIST_FILE = AnimatedFriends/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AnimatedFriends/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
