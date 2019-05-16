@@ -12,5 +12,18 @@ class FriendTableViewCell: UITableViewCell {
 
 	@IBOutlet var friendImageView: UIImageView!
 	@IBOutlet var nameLabel: UILabel!
-	var friend: Friend?
+	
+	private func setupViews() {
+		guard let friend = friend else { return }
+	
+		
+		friendImageView.image = friend.image
+	
+	}
+	
+	var friend: Friend?{
+		didSet {
+			setupViews()
+		}
+	}
 }

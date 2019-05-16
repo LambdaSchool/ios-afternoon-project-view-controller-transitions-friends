@@ -15,6 +15,7 @@
 		E885E8A4228DF3D200A8A553 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E885E8A3228DF3D200A8A553 /* FriendTableViewCell.swift */; };
 		E885E8A6228DF44B00A8A553 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E885E8A5228DF44B00A8A553 /* DetailViewController.swift */; };
 		E885E8A9228DF65800A8A553 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = E885E8A8228DF65800A8A553 /* Friend.swift */; };
+		E885E8AB228DFB2C00A8A553 /* FriendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E885E8AA228DFB2C00A8A553 /* FriendController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E885E8A3228DF3D200A8A553 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		E885E8A5228DF44B00A8A553 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		E885E8A8228DF65800A8A553 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		E885E8AA228DFB2C00A8A553 /* FriendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				E885E88F228DEFA100A8A553 /* AppDelegate.swift */,
 				E885E8A8228DF65800A8A553 /* Friend.swift */,
+				E885E8AA228DFB2C00A8A553 /* FriendController.swift */,
 				E885E8A7228DF45100A8A553 /* ViewControllers */,
 				E885E893228DEFA100A8A553 /* Main.storyboard */,
 				E885E896228DEFA200A8A553 /* Assets.xcassets */,
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E885E8A4228DF3D200A8A553 /* FriendTableViewCell.swift in Sources */,
+				E885E8AB228DFB2C00A8A553 /* FriendController.swift in Sources */,
 				E885E8A2228DF39A00A8A553 /* FriendsTableViewController.swift in Sources */,
 				E885E8A9228DF65800A8A553 /* Friend.swift in Sources */,
 				E885E890228DEFA100A8A553 /* AppDelegate.swift in Sources */,
