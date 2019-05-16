@@ -13,6 +13,8 @@
 		73400207228DEDB10012723F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73400205228DEDB10012723F /* LaunchScreen.storyboard */; };
 		7340020F228DEEA60012723F /* FriendListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7340020E228DEEA60012723F /* FriendListTableViewController.swift */; };
 		73400211228DEEBC0012723F /* FriendDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73400210228DEEBC0012723F /* FriendDetailViewController.swift */; };
+		73400214228DF0AE0012723F /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73400213228DF0AE0012723F /* Friend.swift */; };
+		73400216228DF0D50012723F /* FriendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73400215228DF0D50012723F /* FriendController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		73400208228DEDB10012723F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7340020E228DEEA60012723F /* FriendListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListTableViewController.swift; sourceTree = "<group>"; };
 		73400210228DEEBC0012723F /* FriendDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailViewController.swift; sourceTree = "<group>"; };
+		73400213228DF0AE0012723F /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		73400215228DF0D50012723F /* FriendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				734001FC228DEDAA0012723F /* AppDelegate.swift */,
+				73400213228DF0AE0012723F /* Friend.swift */,
+				73400215228DF0D50012723F /* FriendController.swift */,
 				73400212228DEEC40012723F /* View Controllers */,
 				73400200228DEDAA0012723F /* Main.storyboard */,
 				73400203228DEDB10012723F /* Assets.xcassets */,
@@ -148,7 +154,9 @@
 			files = (
 				7340020F228DEEA60012723F /* FriendListTableViewController.swift in Sources */,
 				734001FD228DEDAA0012723F /* AppDelegate.swift in Sources */,
+				73400216228DF0D50012723F /* FriendController.swift in Sources */,
 				73400211228DEEBC0012723F /* FriendDetailViewController.swift in Sources */,
+				73400214228DF0AE0012723F /* Friend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
