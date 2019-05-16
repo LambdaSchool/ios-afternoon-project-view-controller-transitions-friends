@@ -55,7 +55,7 @@
                                 <connections>
                                     <outlet property="nameLabel" destination="wFA-Gm-1O7" id="Igh-Rt-waH"/>
                                     <outlet property="profileImage" destination="hyX-7g-c1o" id="atv-En-chr"/>
-                                    <segue destination="L5G-1p-CnY" kind="show" id="zKB-bG-U09"/>
+                                    <segue destination="L5G-1p-CnY" kind="show" identifier="ShowDetail" id="zKB-bG-U09"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

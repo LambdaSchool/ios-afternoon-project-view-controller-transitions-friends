@@ -31,7 +31,12 @@ class FriendsTableViewController: UITableViewController {
 
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        if segue.identifier == "ShowDetail" {
+            if let index = self.tableView.indexPathForSelectedRow {
+                let detailVC = segue.destination as! FriendsDetailViewController
+                detailVC.friend = friendController.friends[index.row]
+            }
+        }
     }
 
 }
