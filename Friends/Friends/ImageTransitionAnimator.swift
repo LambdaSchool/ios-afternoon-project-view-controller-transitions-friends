@@ -21,11 +21,6 @@ class ImageTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         
-//        guard let fromVC = transitionContext.viewController(forKey: .from) else {
-//            NSLog("Error getting fromVC")
-//            return
-//        }
-        
         guard let toVC = transitionContext.viewController(forKey: .to) else {
             NSLog("Error getting toVC")
             return
