@@ -16,7 +16,7 @@ class ImageTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     var destinationNameLabel: UILabel?
 
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        return 0.5
+        return 2
     }
     
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
