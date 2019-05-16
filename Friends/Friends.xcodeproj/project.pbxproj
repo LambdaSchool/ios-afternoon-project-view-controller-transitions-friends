@@ -16,6 +16,7 @@
 		33A5D95E228DF94F007467EF /* UIAlertController+NetError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A5D95C228DF94F007467EF /* UIAlertController+NetError.swift */; };
 		33A5D960228DF96B007467EF /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A5D95F228DF96B007467EF /* NetworkHandler.swift */; };
 		33A5D962228DFD1C007467EF /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A5D961228DFD1C007467EF /* FriendTableViewCell.swift */; };
+		33A5D968228E01E6007467EF /* FriendDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A5D967228E01E6007467EF /* FriendDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		33A5D95C228DF94F007467EF /* UIAlertController+NetError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+NetError.swift"; sourceTree = "<group>"; };
 		33A5D95F228DF96B007467EF /* NetworkHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
 		33A5D961228DFD1C007467EF /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		33A5D967228E01E6007467EF /* FriendDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				33A5D947228DF771007467EF /* FriendsTableViewController.swift */,
+				33A5D967228E01E6007467EF /* FriendDetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				33A5D962228DFD1C007467EF /* FriendTableViewCell.swift in Sources */,
 				33A5D960228DF96B007467EF /* NetworkHandler.swift in Sources */,
 				33A5D946228DF771007467EF /* AppDelegate.swift in Sources */,
+				33A5D968228E01E6007467EF /* FriendDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

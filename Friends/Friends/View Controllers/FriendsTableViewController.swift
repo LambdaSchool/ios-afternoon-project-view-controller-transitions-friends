@@ -28,6 +28,14 @@ class FriendsTableViewController: UITableViewController {
 					Friend(name: "Ross Geller", imageURL: "https://images.mid-day.com/images/2018/oct/ross_d.jpg", bio: "Monica's older brother. Was on a break.")
 				   ]
 	}
+
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		if let dest = segue.destination as? FriendDetailViewController {
+			dest.networkHandler = networkHandler
+			guard let indexPath = tableView.indexPathForSelectedRow else { return }
+			dest.friend = friends[indexPath.row]
+		}
+	}
 }
 
 // MARK: - table view stuff
