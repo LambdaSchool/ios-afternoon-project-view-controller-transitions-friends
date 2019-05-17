@@ -59,11 +59,13 @@ class ImageTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         let transitionalLabel = UILabel(frame: transitionalLabelInitialFrame)
         transitionalLabel.textColor = .black
         transitionalLabel.font = sourceName.font
+        transitionalLabel.textAlignment = .center
         transitionalLabel.text = sourceName.text
         containerView.addSubview(transitionalLabel)
 
         let transitionalImage = UIImageView(frame: transitionalImageInitialFrame)
         transitionalImage.image = sourceImage.image
+        transitionalImage.contentMode = UIView.ContentMode.scaleAspectFit
         containerView.addSubview(transitionalImage)
 
         let transitionDuration = self.transitionDuration(using: transitionContext)
