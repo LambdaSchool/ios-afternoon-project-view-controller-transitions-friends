@@ -19,42 +19,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendCell" id="4eL-gI-wW7" customClass="CellTableViewCell" customModule="Friends" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendCell" textLabel="dY4-L4-m1L" style="IBUITableViewCellStyleDefault" id="4eL-gI-wW7">
                                 <rect key="frame" x="0.0" y="28" width="414" height="56"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4eL-gI-wW7" id="aYW-I3-2jZ">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0Jx-CB-LhU">
-                                            <rect key="frame" x="20" y="8" width="374" height="39.5"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hyX-7g-c1o">
-                                                    <rect key="frame" x="0.0" y="0.0" width="39.5" height="39.5"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="39.5" id="9sC-hm-wZe"/>
-                                                        <constraint firstAttribute="width" secondItem="hyX-7g-c1o" secondAttribute="height" multiplier="1:1" id="XKf-ti-Td3"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFA-Gm-1O7">
-                                                    <rect key="frame" x="47.5" y="0.0" width="326.5" height="39.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </stackView>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dY4-L4-m1L">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="55.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="0Jx-CB-LhU" secondAttribute="trailing" constant="20" id="7af-XI-wtZ"/>
-                                        <constraint firstAttribute="bottom" secondItem="0Jx-CB-LhU" secondAttribute="bottom" constant="8" id="OBV-3r-hQK"/>
-                                        <constraint firstItem="0Jx-CB-LhU" firstAttribute="top" secondItem="aYW-I3-2jZ" secondAttribute="top" constant="8" id="jxi-9c-fzt"/>
-                                        <constraint firstItem="0Jx-CB-LhU" firstAttribute="leading" secondItem="aYW-I3-2jZ" secondAttribute="leading" constant="20" id="lej-x7-Ejl"/>
-                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="nameLabel" destination="wFA-Gm-1O7" id="Igh-Rt-waH"/>
-                                    <outlet property="profilePictureImageView" destination="hyX-7g-c1o" id="atv-En-chr"/>
                                     <segue destination="L5G-1p-CnY" kind="show" identifier="ShowDetail" id="zKB-bG-U09"/>
                                 </connections>
                             </tableViewCell>
@@ -85,16 +66,10 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9bi-IA-nly">
-                                <rect key="frame" x="20" y="499" width="374" height="49"/>
+                                <rect key="frame" x="20" y="499" width="374" height="20.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VzL-Ep-Dez">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpn-Lh-OtV">
-                                        <rect key="frame" x="0.0" y="28.5" width="374" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -114,9 +89,8 @@
                         <viewLayoutGuide key="safeArea" id="Cne-XZ-wGn"/>
                     </view>
                     <connections>
-                        <outlet property="nameLabel" destination="VzL-Ep-Dez" id="fWH-vy-zRw"/>
-                        <outlet property="profilePictureImageView" destination="dbC-1N-Tm2" id="SdE-lh-Ft3"/>
-                        <outlet property="titleLabel" destination="mpn-Lh-OtV" id="7hO-ij-4uD"/>
+                        <outlet property="FriendNameLabel" destination="VzL-Ep-Dez" id="fWH-vy-zRw"/>
+                        <outlet property="friendImageView" destination="dbC-1N-Tm2" id="SdE-lh-Ft3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Htt-PJ-PBB" userLabel="First Responder" sceneMemberID="firstResponder"/>

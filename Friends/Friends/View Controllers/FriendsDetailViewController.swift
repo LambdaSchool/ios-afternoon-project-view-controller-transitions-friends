@@ -9,18 +9,23 @@
 import UIKit
 
 class FriendsDetailViewController: UIViewController, UIViewControllerTransitioningDelegate {
+    
     var friend: Friend?
 
-    @IBOutlet weak var profilePictureImageView: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var friendImageView: UIImageView!
+    @IBOutlet weak var FriendNameLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        updateView()
+    }
+    
+    func updateView() {
         guard let selectedFriend = friend else { return }
-        profilePictureImageView.image = selectedFriend.image
-        nameLabel.text = selectedFriend.name
-        titleLabel.text = selectedFriend.title
+        
+        friendImageView.image = selectedFriend.image
+        FriendNameLabel.text = selectedFriend.name
+        navigationItem.title = selectedFriend.name
     }
 }

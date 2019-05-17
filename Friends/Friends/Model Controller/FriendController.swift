@@ -9,6 +9,6 @@
 import Foundation
 
 class FriendController {
-    var friends: [Friend] = [Friend(name: "Charles Buchannan", title: "Lead Engineer", image: #imageLiteral(resourceName: "charles")),
-                             Friend(name: "Jenn Strict", title: "Jr Engineer", image: #imageLiteral(resourceName: "Jenn"))]
+    var friends: [Friend] = [Friend(name: "Charles Buchannan", image: #imageLiteral(resourceName: "charles")),
+                             Friend(name: "Jenn Strict", image: #imageLiteral(resourceName: "Jenn"))]
 }

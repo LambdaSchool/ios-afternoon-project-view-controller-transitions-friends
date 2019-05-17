@@ -13,7 +13,6 @@
 		EC98CCFC228DECC00058738D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC98CCFA228DECC00058738D /* LaunchScreen.storyboard */; };
 		EC98CD09228DF5AF0058738D /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC98CD08228DF5AF0058738D /* FriendsTableViewController.swift */; };
 		EC98CD0B228DF5C70058738D /* FriendsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC98CD0A228DF5C70058738D /* FriendsDetailViewController.swift */; };
-		EC98CD11228DF8350058738D /* CellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC98CD10228DF8350058738D /* CellTableViewCell.swift */; };
 		ECABEABE228DFA36002AE6F6 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECABEABD228DFA36002AE6F6 /* Friend.swift */; };
 		ECABEAC0228DFB31002AE6F6 /* FriendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECABEABF228DFB31002AE6F6 /* FriendController.swift */; };
 		ECABEAC5228E04B7002AE6F6 /* ImageTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECABEAC4228E04B7002AE6F6 /* ImageTransitionAnimator.swift */; };
@@ -29,7 +28,6 @@
 		EC98CCFD228DECC00058738D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC98CD08228DF5AF0058738D /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
 		EC98CD0A228DF5C70058738D /* FriendsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsDetailViewController.swift; sourceTree = "<group>"; };
-		EC98CD10228DF8350058738D /* CellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTableViewCell.swift; sourceTree = "<group>"; };
 		ECABEABD228DFA36002AE6F6 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		ECABEABF228DFB31002AE6F6 /* FriendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendController.swift; sourceTree = "<group>"; };
 		ECABEAC4228E04B7002AE6F6 /* ImageTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTransitionAnimator.swift; sourceTree = "<group>"; };
@@ -124,7 +122,6 @@
 		EC98CD0C228DF75D0058738D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				EC98CD10228DF8350058738D /* CellTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -211,7 +208,6 @@
 			files = (
 				EC98CD09228DF5AF0058738D /* FriendsTableViewController.swift in Sources */,
 				ECABEAC0228DFB31002AE6F6 /* FriendController.swift in Sources */,
-				EC98CD11228DF8350058738D /* CellTableViewCell.swift in Sources */,
 				ECABEABE228DFA36002AE6F6 /* Friend.swift in Sources */,
 				ECABEAC7228E0F30002AE6F6 /* NavigationControllerDelegate.swift in Sources */,
 				ECABEAC5228E04B7002AE6F6 /* ImageTransitionAnimator.swift in Sources */,

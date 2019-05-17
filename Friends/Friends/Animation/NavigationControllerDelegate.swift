@@ -9,26 +9,26 @@
 import UIKit
 
 class NavigationControllerDelegate: NSObject, UINavigationControllerDelegate {
-    var sourceCell: CellTableViewCell?
+    
+    var sourceCell: UITableViewCell?
     let animator = ImageTransitionAnimator()
     
     func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         
         toVC.loadViewIfNeeded()
         
-        print("Nave Delegate")
         if let destination = toVC as? FriendsDetailViewController, let cell = sourceCell {
-            animator.destinationName = destination.nameLabel
-            animator.destinationImage = destination.profilePictureImageView
+            animator.destinationName = destination.FriendNameLabel
+            animator.destinationImage = destination.friendImageView
             
-            animator.sourceName = cell.nameLabel
-            animator.sourceImage = cell.profilePictureImageView
+            animator.sourceName = cell.textLabel
+            animator.sourceImage = cell.imageView
         } else if let from = fromVC as? FriendsDetailViewController, let cell = sourceCell {
-            animator.destinationName = cell.nameLabel
-            animator.destinationImage = cell .profilePictureImageView
+            animator.destinationName = cell.textLabel
+            animator.destinationImage = cell.imageView
             
-            animator.sourceName = from.nameLabel
-            animator.sourceImage = from.profilePictureImageView
+            animator.sourceName = from.FriendNameLabel
+            animator.sourceImage = from.friendImageView
         } else {
             print("Could not cast")
         }

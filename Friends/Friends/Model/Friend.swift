@@ -10,6 +10,5 @@ import UIKit
 
 struct Friend {
     let name: String
-    let title: String
     let image: UIImage
 }

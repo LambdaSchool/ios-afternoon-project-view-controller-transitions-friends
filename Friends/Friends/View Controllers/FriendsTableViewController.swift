@@ -9,12 +9,13 @@
 import UIKit
 
 class FriendsTableViewController: UITableViewController, UIViewControllerTransitioningDelegate {
+    
     let friendController = FriendController()
     let navigationControllerDelegate = NavigationControllerDelegate()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         navigationController?.delegate = navigationControllerDelegate
     }
 
@@ -24,21 +25,22 @@ class FriendsTableViewController: UITableViewController, UIViewControllerTransit
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "FriendCell", for: indexPath) as? CellTableViewCell else { return UITableViewCell() }
-
-        cell.nameLabel.text = friendController.friends[indexPath.row].name
-        cell.profilePictureImageView.image = friendController.friends[indexPath.row].image
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FriendCell", for: indexPath)
+        
+        cell.textLabel?.text = friendController.friends[indexPath.row].name
+        cell.imageView?.image = friendController.friends[indexPath.row].image
+        
         return cell
     }
 
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "ShowDetail" {
-            if let index = self.tableView.indexPathForSelectedRow {
-                let detailVC = segue.destination as! FriendsDetailViewController
-                detailVC.friend = friendController.friends[index.row]
-                navigationControllerDelegate.sourceCell = (self.tableView.cellForRow(at: index) as! CellTableViewCell)
+        
+        if let index = tableView.indexPathForSelectedRow {
+            navigationControllerDelegate.sourceCell = tableView.cellForRow(at: index)
+            if segue.identifier == "ShowDetail" {
+                guard let destinationVC = segue.destination as? FriendsDetailViewController else { return }
+                destinationVC.friend = friendController.friends[index.row]
             }
         }
     }
