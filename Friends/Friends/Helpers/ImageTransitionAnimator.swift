@@ -57,8 +57,8 @@ class ImageTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
 		tempLabelView.textColor = sourceTextLabel.textColor
 		tempLabelView.font = sourceTextLabel.font
 
-		container.addSubview(tempImageView)
 		container.addSubview(tempLabelView)
+		container.addSubview(tempImageView)
 
 		destView.alpha = 0
 		sourceTextLabel.alpha = 0
@@ -70,9 +70,9 @@ class ImageTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
 
 		let duration = transitionDuration(using: transitionContext)
 		UIView.animate(withDuration: duration, animations: {
+
 			tempLabelView.frame = destTextFrame
 			tempLabelView.frame.size = sourceTextLabel.frame.size
-			tempLabelView.font = destTextLabel.font
 
 			tempImageView.frame = destImageFrame
 			tempImageView.layer.cornerRadius = destImageView.layer.cornerRadius
