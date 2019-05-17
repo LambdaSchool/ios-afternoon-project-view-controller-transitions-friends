@@ -10,9 +10,12 @@ import UIKit
 
 class FriendsTableViewController: UITableViewController, UIViewControllerTransitioningDelegate {
     let friendController = FriendController()
+    let navigationControllerDelegate = NavigationControllerDelegate()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationController?.delegate = navigationControllerDelegate
     }
 
     // MARK: - Table view data source
@@ -24,7 +27,7 @@ class FriendsTableViewController: UITableViewController, UIViewControllerTransit
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "FriendCell", for: indexPath) as? CellTableViewCell else { return UITableViewCell() }
 
         cell.nameLabel.text = friendController.friends[indexPath.row].name
-        cell.profileImage.image = friendController.friends[indexPath.row].image
+        cell.profilePictureImageView.image = friendController.friends[indexPath.row].image
 
         return cell
     }
@@ -35,6 +38,7 @@ class FriendsTableViewController: UITableViewController, UIViewControllerTransit
             if let index = self.tableView.indexPathForSelectedRow {
                 let detailVC = segue.destination as! FriendsDetailViewController
                 detailVC.friend = friendController.friends[index.row]
+                navigationControllerDelegate.sourceCell = (self.tableView.cellForRow(at: index) as! CellTableViewCell)
             }
         }
     }

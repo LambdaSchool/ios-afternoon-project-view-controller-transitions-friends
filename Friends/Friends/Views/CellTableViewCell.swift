@@ -10,7 +10,7 @@ import UIKit
 
 class CellTableViewCell: UITableViewCell, UIViewControllerTransitioningDelegate {
     
-    @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var profilePictureImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     
     override func awakeFromNib() {
