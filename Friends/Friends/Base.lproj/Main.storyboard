@@ -98,6 +98,7 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="APM-jw-Rj3" firstAttribute="bottom" secondItem="TcN-kr-Hnn" secondAttribute="bottom" constant="20" id="0QY-nt-EGy"/>
                             <constraint firstItem="APM-jw-Rj3" firstAttribute="trailing" secondItem="TcN-kr-Hnn" secondAttribute="trailing" constant="20" id="1iK-XD-AwO"/>
@@ -105,15 +106,24 @@
                             <constraint firstItem="TcN-kr-Hnn" firstAttribute="top" secondItem="APM-jw-Rj3" secondAttribute="top" constant="20" id="Usc-Nw-CD6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="APM-jw-Rj3"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="feQ-gk-ebK" appends="YES" id="7Q3-b9-8r1"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="Onp-XB-Id0"/>
                     <connections>
                         <outlet property="friendBio" destination="rlO-qI-ftl" id="x9p-cn-AaG"/>
                         <outlet property="friendImageView" destination="WFL-5f-Zb9" id="CB8-22-bLu"/>
                         <outlet property="friendNameLabel" destination="zPi-eJ-PtN" id="xkn-m1-4nW"/>
+                        <outlet property="panGestureRecognizer" destination="feQ-gk-ebK" id="3LJ-he-LQa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rJU-C0-OYs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="feQ-gk-ebK">
+                    <connections>
+                        <action selector="pan:" destination="wua-cI-rwp" id="NOm-ZQ-saz"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2516" y="167"/>
         </scene>
