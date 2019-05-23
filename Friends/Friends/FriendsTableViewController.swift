@@ -9,10 +9,11 @@
 import UIKit
 
 class FriendsTableViewController: UITableViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         friends += [Friend(name: "Mitch", profilePicture: "Headshot", title: "iOS software development student")]
+        navigationController?.delegate = NavigationControllerDelegate
     }
     
     var friends : [Friend] = []

@@ -15,6 +15,7 @@
 		3D90E7D0229737C6007AC383 /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D90E7CF229737C6007AC383 /* FriendsTableViewController.swift */; };
 		3D90E7D2229737DA007AC383 /* FriendDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D90E7D1229737DA007AC383 /* FriendDetailViewController.swift */; };
 		3D90E7D42297415E007AC383 /* NavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D90E7D32297415E007AC383 /* NavigationControllerDelegate.swift */; };
+		3D90E7D62297423D007AC383 /* ImageTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D90E7D52297423D007AC383 /* ImageTransitionAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		3D90E7CF229737C6007AC383 /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
 		3D90E7D1229737DA007AC383 /* FriendDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailViewController.swift; sourceTree = "<group>"; };
 		3D90E7D32297415E007AC383 /* NavigationControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerDelegate.swift; sourceTree = "<group>"; };
+		3D90E7D52297423D007AC383 /* ImageTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTransitionAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				3D90E7BF22972EDD007AC383 /* Main.storyboard */,
 				3D90E7CD229733A3007AC383 /* Friend.swift */,
 				3D90E7CF229737C6007AC383 /* FriendsTableViewController.swift */,
+				3D90E7D52297423D007AC383 /* ImageTransitionAnimator.swift */,
 				3D90E7D32297415E007AC383 /* NavigationControllerDelegate.swift */,
 				3D90E7D1229737DA007AC383 /* FriendDetailViewController.swift */,
 				3D90E7C222972EDF007AC383 /* Assets.xcassets */,
@@ -147,6 +150,7 @@
 				3D90E7D42297415E007AC383 /* NavigationControllerDelegate.swift in Sources */,
 				3D90E7CE229733A3007AC383 /* Friend.swift in Sources */,
 				3D90E7BC22972EDD007AC383 /* AppDelegate.swift in Sources */,
+				3D90E7D62297423D007AC383 /* ImageTransitionAnimator.swift in Sources */,
 				3D90E7D2229737DA007AC383 /* FriendDetailViewController.swift in Sources */,
 				3D90E7D0229737C6007AC383 /* FriendsTableViewController.swift in Sources */,
 			);
