@@ -29,7 +29,7 @@ class FriendsTableViewController: UITableViewController {
         let friend = friendController.friends[indexPath.row]
         
         cell.nameLabel.text = friend.name
-        cell.friendImage.image = UIImage(named: friend.imageName)
+        cell.friendImage.image = friend.image
 
         return cell
     }

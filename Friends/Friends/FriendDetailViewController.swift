@@ -24,11 +24,10 @@ class FriendDetailViewController: UIViewController {
     
     func updateViews() {
         guard isViewLoaded,
-            let friend = friend,
-            let image = UIImage(named: friend.imageName) else { return }
+            let friend = friend else { return }
         
         nameLabel.text = friend.name
-        friendImage.image = image
+        friendImage.image = friend.image
         bioTextView.text = friend.bio
     }
     

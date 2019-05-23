@@ -12,7 +12,7 @@ import UIKit
 struct Friend {
     
     let name: String
-    let imageName: String
+    let image: UIImage
     let bio: String
     
 }

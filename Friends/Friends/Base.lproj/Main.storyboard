@@ -117,7 +117,7 @@
                     </view>
                     <connections>
                         <outlet property="bioTextView" destination="WqV-FD-mGp" id="Lhk-wn-hs3"/>
-                        <outlet property="imageView" destination="v74-Fm-MpE" id="ijt-ZJ-emS"/>
+                        <outlet property="friendImage" destination="v74-Fm-MpE" id="68z-4g-6bO"/>
                         <outlet property="nameLabel" destination="fc9-JN-Cy7" id="HnZ-3a-WsH"/>
                     </connections>
                 </viewController>
