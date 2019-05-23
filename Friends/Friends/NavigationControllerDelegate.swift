@@ -30,7 +30,7 @@ class NavigationControllerDelegate: NSObject, UINavigationControllerDelegate {
             
         } else if let fromVC = fromVC as? FriendDetailViewController {
             
-            animator.destinationImageView = sourceCell.imageView
+            animator.destinationImageView = sourceCell.friendImage
             animator.destinationNameLabel = sourceCell.nameLabel
             
             animator.sourceImageView = fromVC.friendImage
