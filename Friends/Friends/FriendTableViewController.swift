@@ -9,53 +9,55 @@
 import UIKit
 
 class FriendTableViewController: UITableViewController {
-    let friendController = FriendController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let lucy = Friend(image: UIImage(named: "lucy")! , name: "Lucy", bio: "Energetic Kid")
-        let miles = Friend(image: UIImage(named: "miles")!, name: "Miles", bio: "Curious")
-        let clark = Friend(image: UIImage(named: "clark")!, name: "Clark", bio: "Ball of fire!")
-        
+        let lucy = Friend(image: #imageLiteral(resourceName: "lucy"), name: "Lucy", bio: "Energetic Kid")
+        let miles = Friend(image: #imageLiteral(resourceName: "miles"), name: "Miles", bio: "Curious")
+        let clark = Friend(image: #imageLiteral(resourceName: "clark"), name: "Clark", bio: "Ball of fire")
         friendController.friends.append(lucy)
         friendController.friends.append(miles)
         friendController.friends.append(clark)
+        
+        navigationController?.delegate = navigationControllerDelegate
+        
     }
-
+    
     // MARK: - Table view data source
-
+    
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return friendController.friends.count
     }
-
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FriendCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FriendCell", for: indexPath) as! FriendTableViewCell
+        cell.friend = friendController.friends[indexPath.row]
         
-        let friend = friendController.friends[indexPath.row]
-
-        cell.imageView?.image = friend.image
-        cell.textLabel?.text = friend.name
-
+        
         return cell
     }
     
-
-   
-    // MARK: - Navigation
-
     
+    
+    
+    
+    // MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "ShowDetailVC" {
-            guard let detailVC = segue.destination as? FriendDetailViewController else { return }
-            
+        if segue.identifier == "ShowFriendDetail" {
             guard let indexPath = tableView.indexPathForSelectedRow else { return }
-            let friend = friendController.friends[indexPath.row]
-            detailVC.friend = friend
+            navigationControllerDelegate.sourceCell = tableView.cellForRow(at: indexPath)
+            let detailVC = segue.destination as! FriendDetailViewController
+            navigationControllerDelegate.detailVC = detailVC
         }
     }
     
-
+    
+    let friendController = FriendController()
+    let navigationControllerDelegate = NavigationControllerDelegate()
 }

@@ -7,27 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8FBFF6D7229727730032FAAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFF6D6229727730032FAAC /* AppDelegate.swift */; };
-		8FBFF6DC229727730032FAAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FBFF6DA229727730032FAAC /* Main.storyboard */; };
-		8FBFF6DE229727740032FAAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FBFF6DD229727740032FAAC /* Assets.xcassets */; };
-		8FBFF6E1229727740032FAAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FBFF6DF229727740032FAAC /* LaunchScreen.storyboard */; };
-		8FBFF6EB2297299B0032FAAC /* FriendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFF6EA2297299B0032FAAC /* FriendTableViewController.swift */; };
-		8FBFF6ED22972A180032FAAC /* FriendDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFF6EC22972A180032FAAC /* FriendDetailViewController.swift */; };
-		8FBFF6EF22972CC70032FAAC /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFF6EE22972CC70032FAAC /* Friend.swift */; };
-		8FBFF6F122972DAD0032FAAC /* FriendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFF6F022972DAD0032FAAC /* FriendController.swift */; };
+		8FBFF7042297476D0032FAAC /* FriendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFF6F82297476D0032FAAC /* FriendController.swift */; };
+		8FBFF7052297476D0032FAAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FBFF6F92297476D0032FAAC /* Main.storyboard */; };
+		8FBFF7062297476D0032FAAC /* NavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFF6FA2297476D0032FAAC /* NavigationControllerDelegate.swift */; };
+		8FBFF7072297476D0032FAAC /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFF6FB2297476D0032FAAC /* Friend.swift */; };
+		8FBFF7082297476D0032FAAC /* FriendDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFF6FC2297476D0032FAAC /* FriendDetailViewController.swift */; };
+		8FBFF7092297476D0032FAAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FBFF6FD2297476D0032FAAC /* Assets.xcassets */; };
+		8FBFF70A2297476D0032FAAC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FBFF6FE2297476D0032FAAC /* Info.plist */; };
+		8FBFF70B2297476D0032FAAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFF6FF2297476D0032FAAC /* AppDelegate.swift */; };
+		8FBFF70C2297476D0032FAAC /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFF7002297476D0032FAAC /* FriendTableViewCell.swift */; };
+		8FBFF70D2297476D0032FAAC /* FriendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFF7012297476D0032FAAC /* FriendTableViewController.swift */; };
+		8FBFF70E2297476D0032FAAC /* ImageTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBFF7022297476D0032FAAC /* ImageTransitionAnimator.swift */; };
+		8FBFF70F2297476D0032FAAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FBFF7032297476D0032FAAC /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8FBFF6D3229727730032FAAC /* Friends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Friends.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8FBFF6D6229727730032FAAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8FBFF6DB229727730032FAAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8FBFF6DD229727740032FAAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8FBFF6E0229727740032FAAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8FBFF6E2229727740032FAAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8FBFF6EA2297299B0032FAAC /* FriendTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewController.swift; sourceTree = "<group>"; };
-		8FBFF6EC22972A180032FAAC /* FriendDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailViewController.swift; sourceTree = "<group>"; };
-		8FBFF6EE22972CC70032FAAC /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
-		8FBFF6F022972DAD0032FAAC /* FriendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendController.swift; sourceTree = "<group>"; };
+		8FBFF6F82297476D0032FAAC /* FriendController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendController.swift; sourceTree = "<group>"; };
+		8FBFF6F92297476D0032FAAC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8FBFF6FA2297476D0032FAAC /* NavigationControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerDelegate.swift; sourceTree = "<group>"; };
+		8FBFF6FB2297476D0032FAAC /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		8FBFF6FC2297476D0032FAAC /* FriendDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendDetailViewController.swift; sourceTree = "<group>"; };
+		8FBFF6FD2297476D0032FAAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FBFF6FE2297476D0032FAAC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FBFF6FF2297476D0032FAAC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8FBFF7002297476D0032FAAC /* FriendTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		8FBFF7012297476D0032FAAC /* FriendTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendTableViewController.swift; sourceTree = "<group>"; };
+		8FBFF7022297476D0032FAAC /* ImageTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTransitionAnimator.swift; sourceTree = "<group>"; };
+		8FBFF7032297476D0032FAAC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,15 +67,18 @@
 		8FBFF6D5229727730032FAAC /* Friends */ = {
 			isa = PBXGroup;
 			children = (
-				8FBFF6D6229727730032FAAC /* AppDelegate.swift */,
-				8FBFF6DA229727730032FAAC /* Main.storyboard */,
-				8FBFF6DD229727740032FAAC /* Assets.xcassets */,
-				8FBFF6DF229727740032FAAC /* LaunchScreen.storyboard */,
-				8FBFF6E2229727740032FAAC /* Info.plist */,
-				8FBFF6EA2297299B0032FAAC /* FriendTableViewController.swift */,
-				8FBFF6EC22972A180032FAAC /* FriendDetailViewController.swift */,
-				8FBFF6EE22972CC70032FAAC /* Friend.swift */,
-				8FBFF6F022972DAD0032FAAC /* FriendController.swift */,
+				8FBFF6FF2297476D0032FAAC /* AppDelegate.swift */,
+				8FBFF6FD2297476D0032FAAC /* Assets.xcassets */,
+				8FBFF6FB2297476D0032FAAC /* Friend.swift */,
+				8FBFF6F82297476D0032FAAC /* FriendController.swift */,
+				8FBFF6FC2297476D0032FAAC /* FriendDetailViewController.swift */,
+				8FBFF7002297476D0032FAAC /* FriendTableViewCell.swift */,
+				8FBFF7012297476D0032FAAC /* FriendTableViewController.swift */,
+				8FBFF7022297476D0032FAAC /* ImageTransitionAnimator.swift */,
+				8FBFF6FE2297476D0032FAAC /* Info.plist */,
+				8FBFF7032297476D0032FAAC /* LaunchScreen.storyboard */,
+				8FBFF6F92297476D0032FAAC /* Main.storyboard */,
+				8FBFF6FA2297476D0032FAAC /* NavigationControllerDelegate.swift */,
 			);
 			path = Friends;
 			sourceTree = "<group>";
@@ -105,6 +115,7 @@
 				TargetAttributes = {
 					8FBFF6D2229727730032FAAC = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -131,9 +142,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FBFF6E1229727740032FAAC /* LaunchScreen.storyboard in Resources */,
-				8FBFF6DE229727740032FAAC /* Assets.xcassets in Resources */,
-				8FBFF6DC229727730032FAAC /* Main.storyboard in Resources */,
+				8FBFF7092297476D0032FAAC /* Assets.xcassets in Resources */,
+				8FBFF70F2297476D0032FAAC /* LaunchScreen.storyboard in Resources */,
+				8FBFF7052297476D0032FAAC /* Main.storyboard in Resources */,
+				8FBFF70A2297476D0032FAAC /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,34 +156,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FBFF6D7229727730032FAAC /* AppDelegate.swift in Sources */,
-				8FBFF6F122972DAD0032FAAC /* FriendController.swift in Sources */,
-				8FBFF6EF22972CC70032FAAC /* Friend.swift in Sources */,
-				8FBFF6ED22972A180032FAAC /* FriendDetailViewController.swift in Sources */,
-				8FBFF6EB2297299B0032FAAC /* FriendTableViewController.swift in Sources */,
+				8FBFF7072297476D0032FAAC /* Friend.swift in Sources */,
+				8FBFF70E2297476D0032FAAC /* ImageTransitionAnimator.swift in Sources */,
+				8FBFF7062297476D0032FAAC /* NavigationControllerDelegate.swift in Sources */,
+				8FBFF7082297476D0032FAAC /* FriendDetailViewController.swift in Sources */,
+				8FBFF70D2297476D0032FAAC /* FriendTableViewController.swift in Sources */,
+				8FBFF70C2297476D0032FAAC /* FriendTableViewCell.swift in Sources */,
+				8FBFF70B2297476D0032FAAC /* AppDelegate.swift in Sources */,
+				8FBFF7042297476D0032FAAC /* FriendController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		8FBFF6DA229727730032FAAC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8FBFF6DB229727730032FAAC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8FBFF6DF229727740032FAAC /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8FBFF6E0229727740032FAAC /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8FBFF6E3229727740032FAAC /* Debug */ = {
@@ -294,6 +290,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H5MJHNUR7S;
 				INFOPLIST_FILE = Friends/Info.plist;
@@ -303,6 +300,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bytes-random.Friends";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -312,6 +310,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H5MJHNUR7S;
 				INFOPLIST_FILE = Friends/Info.plist;
