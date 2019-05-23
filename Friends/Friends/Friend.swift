@@ -11,4 +11,5 @@ import Foundation
 struct Friend {
     let name: String
     let profilePicture: String
+    let title: String
 }
