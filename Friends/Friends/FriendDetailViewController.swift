@@ -19,7 +19,7 @@ class FriendDetailViewController: UIViewController {
     
     
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var friendImage: UIImageView!
     @IBOutlet weak var bioTextView: UITextView!
     
     func updateViews() {
@@ -28,7 +28,7 @@ class FriendDetailViewController: UIViewController {
             let image = UIImage(named: friend.imageName) else { return }
         
         nameLabel.text = friend.name
-        imageView.image = image
+        friendImage.image = image
         bioTextView.text = friend.bio
     }
     

@@ -10,26 +10,23 @@ import UIKit
 
 class ImageTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
 
-    
+    var destinationImageView: UIImageView?
+    var sourceImageView: UIImageView?
+    var destinationNameLabel: UILabel?
+    var sourceNameLabel: UILabel?
     
     
     
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        return 0.75
+        return 1.5
     }
     
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         
         
-        guard let fromVC = transitionContext.viewController(forKey: .from) as? FriendTableViewCell,
-            let toVC = transitionContext.viewController(forKey: .to) as? FriendDetailViewController,
+        //guard let fromVC = transitionContext.viewController(forKey: .from) as? FriendTableViewCell,
+        guard let toVC = transitionContext.viewController(forKey: .to) as? FriendDetailViewController,
             let toView = transitionContext.view(forKey: .to) else { return }
-        
-        let fromLabel = fromVC.nameLabel!
-        let fromImage = fromVC.friendImage!
-        let toLabel = toVC.nameLabel!
-        let toImage = toVC.imageView!
-        
         
     }
     
