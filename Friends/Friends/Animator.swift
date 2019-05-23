@@ -41,11 +41,13 @@ class ImageTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         
         toView.layoutIfNeeded()
         
-        let transitionLabelInitialFrame = containerView.convert(sourceNameLabel.bounds, to: sourceNameLabel)
-        let transitionImageInitialFrame = containerView.convert(sourceImageView.bounds, to: sourceImageView)
+        let transitionLabelInitialFrame = containerView.convert(sourceNameLabel.bounds, from: sourceNameLabel)
+        print(transitionLabelInitialFrame)
+        let transitionImageInitialFrame = containerView.convert(sourceImageView.bounds, from: sourceImageView)
+        print(transitionImageInitialFrame)
         
-        let transitionLabelEndFrame = containerView.convert(destinationNameLabel.bounds, to: destinationNameLabel)
-        let transitionImageEndFrame = containerView.convert(destinationImageView.bounds, to: destinationImageView)
+        let transitionLabelEndFrame = containerView.convert(destinationNameLabel.bounds, from: destinationNameLabel)
+        let transitionImageEndFrame = containerView.convert(destinationImageView.bounds, from: destinationImageView)
         
         
         let transitioningLabel = UILabel(frame: transitionLabelInitialFrame)
@@ -85,6 +87,8 @@ class ImageTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
             transitioningLabel.removeFromSuperview()
             transitioningImage.removeFromSuperview()
             
+            sourceNameLabel.alpha = 1
+            sourceImageView.alpha = 1
             destinationImageView.alpha = 1
             destinationNameLabel.alpha = 1
             

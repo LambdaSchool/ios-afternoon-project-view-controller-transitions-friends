@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Friends Table View Controller-->
+        <!--Friends-->
         <scene sceneID="RxY-BU-OLZ">
             <objects>
                 <tableViewController id="7Dq-c4-Ndc" customClass="FriendsTableViewController" customModule="Friends" customModuleProvider="target" sceneMemberID="viewController">
@@ -65,13 +65,13 @@
                             <outlet property="delegate" destination="7Dq-c4-Ndc" id="8SJ-rd-3WI"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Fbt-JQ-bAN"/>
+                    <navigationItem key="navigationItem" title="Friends" id="Fbt-JQ-bAN"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qkc-dO-dNe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1515.9420289855075" y="-66.294642857142861"/>
         </scene>
-        <!--Friend Detail View Controller-->
+        <!--Title-->
         <scene sceneID="DMF-Gf-aK0">
             <objects>
                 <viewController id="dTr-u0-4BV" customClass="FriendDetailViewController" customModule="Friends" customModuleProvider="target" sceneMemberID="viewController">
@@ -82,7 +82,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="pjA-KX-Hlj">
                                 <rect key="frame" x="16" y="104" width="382" height="580.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fc9-JN-Cy7">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fc9-JN-Cy7">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="38.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
                                         <nil key="textColor"/>
@@ -115,6 +115,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zhO-Hj-4tV"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="A8W-5v-Qrn"/>
                     <connections>
                         <outlet property="bioTextView" destination="WqV-FD-mGp" id="Lhk-wn-hs3"/>
                         <outlet property="friendImage" destination="v74-Fm-MpE" id="68z-4g-6bO"/>

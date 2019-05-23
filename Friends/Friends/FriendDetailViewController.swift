@@ -29,6 +29,7 @@ class FriendDetailViewController: UIViewController {
         nameLabel.text = friend.name
         friendImage.image = friend.image
         bioTextView.text = friend.bio
+        navigationItem.title = friend.name
     }
     
     override func viewDidLoad() {
