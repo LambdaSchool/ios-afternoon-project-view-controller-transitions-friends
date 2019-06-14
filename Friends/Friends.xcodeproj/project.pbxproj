@@ -15,6 +15,7 @@
 		D6C36DD122B32AA100A8D98E /* FriendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C36DD022B32AA100A8D98E /* FriendController.swift */; };
 		D6C36DD322B32DFF00A8D98E /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C36DD222B32DFF00A8D98E /* FriendsTableViewController.swift */; };
 		D6C36DD722B3316300A8D98E /* FriendDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C36DD622B3316300A8D98E /* FriendDetailViewController.swift */; };
+		D6C36DDA22B3360F00A8D98E /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C36DD922B3360F00A8D98E /* Animator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D6C36DD022B32AA100A8D98E /* FriendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendController.swift; sourceTree = "<group>"; };
 		D6C36DD222B32DFF00A8D98E /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
 		D6C36DD622B3316300A8D98E /* FriendDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailViewController.swift; sourceTree = "<group>"; };
+		D6C36DD922B3360F00A8D98E /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				D6C36DCC22B32A1E00A8D98E /* Model Controllers */,
 				D6C36DCB22B329EF00A8D98E /* View Controllers */,
 				D6C36DCA22B329E100A8D98E /* Storyboards */,
+				D6C36DD822B335DB00A8D98E /* Helpers */,
 				D6C36DC922B329D200A8D98E /* Resources */,
 			);
 			path = Friends;
@@ -111,6 +114,14 @@
 				D6C36DCE22B32A4400A8D98E /* Friend.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D6C36DD822B335DB00A8D98E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D6C36DD922B3360F00A8D98E /* Animator.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6C36DDA22B3360F00A8D98E /* Animator.swift in Sources */,
 				D6C36DCF22B32A4400A8D98E /* Friend.swift in Sources */,
 				D6C36DD122B32AA100A8D98E /* FriendController.swift in Sources */,
 				D6C36DD322B32DFF00A8D98E /* FriendsTableViewController.swift in Sources */,

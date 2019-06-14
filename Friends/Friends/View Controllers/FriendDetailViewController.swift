@@ -16,6 +16,8 @@ class FriendDetailViewController: UIViewController {
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var bioTextView: UITextView!
     
+    let animator = ImageTransitionAnimator()
+    
     var friend: Friend? {
         didSet {
             self.updateViews()

@@ -10,19 +10,19 @@ import UIKit
 
 class FriendsTableViewController: UITableViewController {
     
-    // MARK: - Properties
+    // MARK: - IBOutlets and Properties
+    
+    @IBOutlet var imageView: UIImageView!
+    @IBOutlet var nameLabel: UILabel!
     
     let friendController = FriendController()
+    let delegate = NavigationControllerDelegate()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        navigationController?.delegate = delegate
     }
+    
 
     // MARK: - TableView DataSource
 
@@ -37,12 +37,11 @@ class FriendsTableViewController: UITableViewController {
         let friend = self.friendController.friends[indexPath.row]
         cell.imageView?.image = friend.image
         cell.textLabel?.text = friend.name
+        
+        self.delegate.sourceCell = tableView.cellForRow(at: indexPath)
 
         return cell
     }
-
-    // MARK: - Methods
-    
     
     // MARK: - Navigation
 
